@@ -9,6 +9,8 @@
 # Launch the setup script to make sure hardware setup looks good
 loadusr -w /home/machinekit/machinekit-dev/configs/ARM/BeagleBone/PocketNC/setup.bridge.sh
 
+#load pin config
+loadusr config-pin -f setup.bridge.bbio
 
 # ###################################
 # Core EMC/HAL Loads

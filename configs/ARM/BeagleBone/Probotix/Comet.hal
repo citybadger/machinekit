@@ -4,6 +4,9 @@
 # Launch the setup script to make sure hardware setup looks good
 loadusr -w ./setup.sh
 
+#config pins
+loadusr config-pin -f comet.bbio
+
 loadrt trivkins
 # trajectory planner
 loadrt tp
